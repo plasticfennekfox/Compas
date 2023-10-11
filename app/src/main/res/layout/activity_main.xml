@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#052F64"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/gradus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#03A9F4"
+
+        android:text="Hello World!"
+        android:textColor="#3F51B5"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/dinImage"
+        android:layout_width="313dp"
+        android:layout_height="335dp"
+        app:layout_constraintBottom_toBottomOf="@+id/staImage"
+        app:layout_constraintEnd_toEndOf="@+id/staImage"
+        app:layout_constraintStart_toStartOf="@+id/staImage"
+        app:layout_constraintTop_toTopOf="@+id/staImage"
+        app:srcCompat="@drawable/kompas1_1" />
+
+    <ImageView
+        android:id="@+id/staImage"
+        android:layout_width="367dp"
+        android:layout_height="362dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.379"
+        app:srcCompat="@drawable/img_compass_dinamic" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
